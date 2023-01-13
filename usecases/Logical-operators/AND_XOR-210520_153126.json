@@ -1,8 +1,6 @@
 [
   {
     "createdAt": "2021-05-20T11:42:45.288Z",
-    "description": "",
-    "hash": "8f7e8c27d7f955ac374094dbc1231c42d6453ac6",
     "id": "06924fdb-2c58-47d9-97a2-c4be295c92e3",
     "name": "AND <-> XOR ?",
     "network": {
@@ -836,7 +834,6 @@
       "kernel": { "localNumThreads": 1, "resolution": 0.1, "rngSeed": 1 },
       "time": 2000
     },
-    "updatedAt": "2021-05-20T13:26:11.640Z",
     "version": "3.2.0"
   }
 ]

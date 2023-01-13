@@ -1,8 +1,6 @@
 [
   {
     "createdAt": "2021-05-20T11:42:45.288Z",
-    "description": "",
-    "hash": "ad92d273c22a895f5b441a5a63d8dddc91f0c4e2",
     "id": "fd2b90eb-5c30-4c13-b50e-eef81eefe896",
     "name": "XOR function",
     "network": {
@@ -1067,6 +1065,6 @@
       "kernel": { "localNumThreads": 1, "resolution": 1, "rngSeed": 1 },
       "time": 2000
     },
-    "version": "3.0.0rc6"
+    "version": "3.0.0"
   }
 ]
