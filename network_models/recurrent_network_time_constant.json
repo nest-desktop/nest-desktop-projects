@@ -921,7 +921,7 @@
           "params": [
             {
               "id": "p",
-              "value": "0.05",
+              "value": 0.1,
               "visible": true,
               "rules": [
                 [
@@ -940,7 +940,7 @@
             "model": "static_synapse",
             "params": [
               { "id": "weight", "value": 1, "visible": true },
-              { "id": "delay", "value": 10, "visible": true }
+              { "id": "delay", "value": 2, "visible": true }
             ]
           },
           "target": 0
@@ -949,7 +949,7 @@
           "params": [
             {
               "id": "p",
-              "value": "0.05",
+              "value": 0.1,
               "visible": true,
               "rules": [
                 [
@@ -995,7 +995,7 @@
           "synapse": {
             "model": "static_synapse",
             "params": [
-              { "id": "weight", "value": "-6", "visible": true },
+              { "id": "weight", "value": -10, "visible": true },
               { "id": "delay", "value": 2, "visible": true }
             ]
           },
@@ -1023,7 +1023,7 @@
           "synapse": {
             "model": "static_synapse",
             "params": [
-              { "id": "weight", "value": "-6", "visible": true },
+              { "id": "weight", "value": -10, "visible": true },
               { "id": "delay", "value": 2, "visible": true }
             ]
           },
