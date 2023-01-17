@@ -1,0 +1,1907 @@
+[
+  {
+    "createdAt": "2021-05-20T11:42:45.288Z",
+    "id": "06924fdb-2c58-47d9-97a2-c4be295c92e3",
+    "name": "AND <-> XOR ?",
+    "network": {
+      "connections": [
+        {
+          "source": 0,
+          "target": 2,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 40,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 40,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 54,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 0,
+          "target": 3,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 40,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 61,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 1,
+          "target": 3,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 40,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 62,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 2,
+          "target": 3,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": -80,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 77,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 4,
+          "target": 0,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 0,
+          "target": 6,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 1,
+          "target": 7,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 3,
+          "target": 9,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 2,
+          "target": 8,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 5,
+          "target": 1,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        }
+      ],
+      "nodes": [
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": { "id": "constant" },
+              "value": 8,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": -36.020263671875, "y": -91.703125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": {
+                "icon": "mdi-numeric",
+                "id": "constant",
+                "label": "constant"
+              },
+              "value": 8,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 134.979736328125, "y": -92.953125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": {
+                "icon": "mdi-numeric",
+                "id": "constant",
+                "label": "constant"
+              },
+              "value": 8,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 53.9212646484375, "y": -65.703125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": {
+                "icon": "mdi-numeric",
+                "id": "constant",
+                "label": "constant"
+              },
+              "value": 4,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 55.979736328125, "y": 21.546875 },
+            "visible": true
+          }
+        },
+        {
+          "model": "poisson_generator",
+          "params": [
+            {
+              "id": "rate",
+              "type": { "id": "constant" },
+              "value": 6000,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 500,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 1500,
+              "factors": [],
+              "visible": true
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": -55.56640625, "y": -170.453125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "poisson_generator",
+          "params": [
+            {
+              "id": "rate",
+              "type": { "id": "constant" },
+              "value": 6000,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 1000,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 2000,
+              "factors": [],
+              "visible": true
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 141.979736328125, "y": -178.953125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": -108.020263671875, "y": -90.703125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 202.979736328125, "y": -120.953125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 53.9212646484375, "y": -130.703125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 52.979736328125, "y": 87.546875 },
+            "visible": true
+          }
+        }
+      ]
+    },
+    "simulation": {
+      "kernel": { "localNumThreads": 1, "resolution": 0.1, "rngSeed": 1 },
+      "time": 2000
+    },
+    "version": "3.2.0"
+  },
+  {
+    "createdAt": "2021-05-20T11:42:45.288Z",
+    "id": "fd2b90eb-5c30-4c13-b50e-eef81eefe896",
+    "name": "XOR function",
+    "network": {
+      "connections": [
+        {
+          "source": 0,
+          "target": 2,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 16,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 2,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 0,
+          "target": 4,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 30,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 4,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 0,
+          "target": 3,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 16,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 4,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 1,
+          "target": 2,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 16,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 2,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 1,
+          "target": 4,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 30,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 4,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 1,
+          "target": 3,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 16,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 2,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 2,
+          "target": 4,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": -34,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 2,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 4,
+          "target": 0,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 2,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 6,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 3,
+          "target": 4,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": -34,
+                "factors": [],
+                "visible": true
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 2,
+                "factors": [],
+                "visible": true
+              }
+            ]
+          }
+        },
+        {
+          "source": 5,
+          "target": 0,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 0,
+          "target": 7,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 1,
+          "target": 8,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 2,
+          "target": 9,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 4,
+          "target": 11,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 3,
+          "target": 10,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        },
+        {
+          "source": 6,
+          "target": 1,
+          "rule": "all_to_all",
+          "params": [],
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              {
+                "id": "weight",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              },
+              {
+                "id": "delay",
+                "type": { "id": "constant" },
+                "value": 1,
+                "factors": [],
+                "visible": false
+              }
+            ]
+          }
+        }
+      ],
+      "nodes": [
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": { "id": "constant" },
+              "value": 8,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": -23.609375, "y": -118.46875 },
+            "visible": true
+          }
+        },
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": { "id": "constant" },
+              "value": 8,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 88.4765625, "y": -115.453125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": { "id": "constant" },
+              "value": 8,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": -29.9034423828125, "y": 27.546875 },
+            "visible": true
+          }
+        },
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": { "id": "constant" },
+              "value": 8,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 148.86285400390625, "y": 22.546875 },
+            "visible": true
+          }
+        },
+        {
+          "model": "iaf_cond_alpha",
+          "params": [
+            {
+              "id": "C_m",
+              "type": { "id": "constant" },
+              "value": 250,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_L",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_ex",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "E_in",
+              "type": { "id": "constant" },
+              "value": -85,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "I_e",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_m",
+              "type": { "id": "constant" },
+              "value": -70,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_reset",
+              "type": { "id": "constant" },
+              "value": -60,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "V_th",
+              "type": { "id": "constant" },
+              "value": -55,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "g_L",
+              "type": { "id": "constant" },
+              "value": 8,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "t_ref",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_ex",
+              "type": { "id": "constant" },
+              "value": 0.2,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "tau_syn_in",
+              "type": { "id": "constant" },
+              "value": 2,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 60.0965576171875, "y": 121.546875 },
+            "visible": true
+          }
+        },
+        {
+          "model": "poisson_generator",
+          "params": [
+            {
+              "id": "rate",
+              "type": { "id": "constant" },
+              "value": 15000,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 500,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 1500,
+              "factors": [],
+              "visible": true
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": -55.56640625, "y": -170.453125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "poisson_generator",
+          "params": [
+            {
+              "id": "rate",
+              "type": { "id": "constant" },
+              "value": 15000,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 1000,
+              "factors": [],
+              "visible": true
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 2000,
+              "factors": [],
+              "visible": true
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 71.979736328125, "y": -177.453125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": -81.5234375, "y": -119.453125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 150.629150390625, "y": -144.453125 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": -97.9034423828125, "y": 45.546875 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 217.86285400390625, "y": 33.546875 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            {
+              "id": "start",
+              "type": { "id": "constant" },
+              "value": 0,
+              "factors": [],
+              "visible": false
+            },
+            {
+              "id": "stop",
+              "type": { "id": "constant" },
+              "value": 10000,
+              "factors": [],
+              "visible": false
+            }
+          ],
+          "size": 1,
+          "view": {
+            "position": { "x": 55.0965576171875, "y": 176.546875 },
+            "visible": true
+          }
+        }
+      ]
+    },
+    "simulation": {
+      "kernel": { "localNumThreads": 1, "resolution": 1, "rngSeed": 1 },
+      "time": 2000
+    },
+    "version": "3.0.0"
+  }
+]
