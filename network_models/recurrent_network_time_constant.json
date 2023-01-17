@@ -1,267 +1,267 @@
 [
-    {
-        "activityGraph": {
-          "panels": [
-            { "model": { "id": "spikeTimesRasterPlot", "params": {} } },
+  {
+    "activityGraph": {
+      "panels": [
+        { "model": { "id": "spikeTimesRasterPlot", "params": {} } },
+        {
+          "model": {
+            "id": "firingRatePlot",
+            "params": { "binSize": 1, "normedValue": false }
+          }
+        }
+      ]
+    },
+    "createdAt": "2023-01-16T15:33:24.391Z",
+    "id": "77e45ad5-2715-440c-910e-c3320c85d8d4",
+    "name": "Recurrent excitation time constant",
+    "network": {
+      "connections": [
+        {
+          "params": [
             {
-              "model": {
-                "id": "firingRatePlot",
-                "params": { "binSize": 1, "normedValue": false }
-              }
-            }
-          ]
-        },
-        "createdAt": "2023-01-16T15:33:24.391Z",
-        "id": "77e45ad5-2715-440c-910e-c3320c85d8d4",
-        "name": "Recurrent excitation time constant",
-        "network": {
-          "connections": [
-            {
-              "params": [
-                {
-                  "id": "p",
-                  "value": "0.05",
-                  "visible": true,
-                  "rules": [
-                    [
-                      "0 < value && value <= 1",
-                      "The value must be between 0.01 and 1.",
-                      "error"
-                    ]
-                  ]
-                },
-                { "id": "allow_autapses", "value": true, "visible": false },
-                { "id": "use_on_source", "value": 0, "visible": false }
-              ],
-              "rule": "pairwise_bernoulli",
-              "source": 1,
-              "synapse": {
-                "model": "static_synapse",
-                "params": [
-                  { "id": "weight", "value": 1, "visible": true },
-                  { "id": "delay", "value": 10, "visible": true }
+              "id": "p",
+              "value": "0.05",
+              "visible": true,
+              "rules": [
+                [
+                  "0 < value && value <= 1",
+                  "The value must be between 0.01 and 1.",
+                  "error"
                 ]
-              },
-              "target": 1
+              ]
             },
-            {
-              "params": [],
-              "rule": "all_to_all",
-              "source": 4,
-              "synapse": {
-                "model": "static_synapse",
-                "params": [
-                  { "id": "weight", "value": 1, "visible": false },
-                  { "id": "delay", "value": 1, "visible": false }
-                ]
-              },
-              "target": 1
-            },
-            {
-              "params": [],
-              "rule": "all_to_all",
-              "source": 4,
-              "synapse": {
-                "model": "static_synapse",
-                "params": [
-                  { "id": "weight", "value": 1, "visible": false },
-                  { "id": "delay", "value": 1, "visible": false }
-                ]
-              },
-              "target": 0
-            },
-            {
-              "params": [],
-              "rule": "all_to_all",
-              "source": 5,
-              "synapse": {
-                "model": "static_synapse",
-                "params": [
-                  { "id": "weight", "value": 1, "visible": false },
-                  { "id": "delay", "value": 1, "visible": false }
-                ]
-              },
-              "target": 1
-            },
-            {
-              "params": [],
-              "rule": "all_to_all",
-              "source": 5,
-              "synapse": {
-                "model": "static_synapse",
-                "params": [
-                  { "id": "weight", "value": 1, "visible": false },
-                  { "id": "delay", "value": 1, "visible": false }
-                ]
-              },
-              "target": 0
-            },
-            {
-              "params": [],
-              "rule": "all_to_all",
-              "source": 1,
-              "synapse": {
-                "model": "static_synapse",
-                "params": [
-                  { "id": "weight", "value": 1, "visible": false },
-                  { "id": "delay", "value": 1, "visible": false }
-                ]
-              },
-              "target": 3
-            },
-            {
-              "params": [],
-              "rule": "all_to_all",
-              "source": 0,
-              "synapse": {
-                "model": "static_synapse",
-                "params": [
-                  { "id": "weight", "value": 1, "visible": false },
-                  { "id": "delay", "value": 1, "visible": false }
-                ]
-              },
-              "target": 2
-            }
+            { "id": "allow_autapses", "value": true, "visible": false },
+            { "id": "use_on_source", "value": 0, "visible": false }
           ],
-          "models": [],
-          "nodes": [
-            {
-              "model": "iaf_psc_alpha",
-              "params": [
-                { "id": "C_m", "value": 250, "visible": false },
-                { "id": "E_L", "value": -70, "visible": false },
-                { "id": "I_e", "value": 0, "visible": false },
-                {
-                  "id": "V_m",
-                  "value": "-70",
-                  "visible": true,
-                  "type": {
-                    "id": "random.uniform",
-                    "specs": [
-                      { "id": "min", "value": -70 },
-                      { "id": "max", "value": -55 }
-                    ]
-                  }
-                },
-                { "id": "V_reset", "value": -70, "visible": false },
-                { "id": "V_th", "value": -55, "visible": false },
-                { "id": "t_ref", "value": 2, "visible": false },
-                { "id": "tau_m", "value": 10, "visible": false },
-                { "id": "tau_syn_ex", "value": 2, "visible": false },
-                { "id": "tau_syn_in", "value": 2, "visible": false }
-              ],
-              "size": "5000",
-              "view": {
-                "color": null,
-                "position": { "x": -86.7890625, "y": -234.375 },
-                "visible": true
-              }
-            },
-            {
-              "model": "iaf_psc_alpha",
-              "params": [
-                { "id": "C_m", "value": 250, "visible": false },
-                { "id": "E_L", "value": -70, "visible": false },
-                { "id": "I_e", "value": 0, "visible": false },
-                {
-                  "id": "V_m",
-                  "value": "-70",
-                  "visible": true,
-                  "type": {
-                    "id": "random.uniform",
-                    "specs": [
-                      { "id": "min", "value": -70 },
-                      { "id": "max", "value": -55 }
-                    ]
-                  }
-                },
-                { "id": "V_reset", "value": -70, "visible": false },
-                { "id": "V_th", "value": -55, "visible": false },
-                { "id": "t_ref", "value": 2, "visible": false },
-                { "id": "tau_m", "value": 10, "visible": false },
-                { "id": "tau_syn_ex", "value": 2, "visible": false },
-                { "id": "tau_syn_in", "value": 2, "visible": false }
-              ],
-              "size": 5000,
-              "view": {
-                "color": "#FF7F0E",
-                "position": { "x": -82.140625, "y": -350.25 },
-                "visible": true
-              }
-            },
-            {
-              "model": "spike_recorder",
-              "params": [
-                { "id": "start", "value": 0, "visible": false },
-                { "id": "stop", "value": 10000, "visible": false }
-              ],
-              "size": 1,
-              "view": {
-                "color": null,
-                "position": { "x": 77.2109375, "y": -231.375 },
-                "visible": true
-              }
-            },
-            {
-              "model": "spike_recorder",
-              "params": [
-                { "id": "start", "value": 0, "visible": false },
-                { "id": "stop", "value": 10000, "visible": false }
-              ],
-              "size": 1,
-              "view": {
-                "color": null,
-                "position": { "x": 81.53515625, "y": -358.375 },
-                "visible": true
-              }
-            },
-            {
-              "model": "noise_generator",
-              "params": [
-                { "id": "mean", "value": 300, "visible": true },
-                { "id": "std", "value": 100, "visible": true },
-                { "id": "start", "value": 0, "visible": false },
-                { "id": "stop", "value": 1000, "visible": false }
-              ],
-              "size": 1,
-              "view": {
-                "color": null,
-                "position": { "x": -237.302734375, "y": -372.375 },
-                "visible": true
-              }
-            },
-            {
-              "model": "dc_generator",
-              "params": [
-                { "id": "amplitude", "value": 50, "visible": true },
-                { "id": "start", "value": 10, "visible": true },
-                { "id": "stop", "value": 110, "visible": true }
-              ],
-              "size": 1,
-              "view": {
-                "color": null,
-                "position": { "x": -220.140625, "y": -230.25 },
-                "visible": true
-              }
-            }
-          ]
-        },
-        "simulation": {
-          "code": {
-            "blocks": [
-              "importModules",
-              "resetKernel",
-              "setKernel",
-              "createNodes",
-              "connectNodes",
-              "runSimulation"
+          "rule": "pairwise_bernoulli",
+          "source": 1,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": true },
+              { "id": "delay", "value": 10, "visible": true }
             ]
           },
-          "kernel": { "localNumThreads": 1, "resolution": 0.1, "rngSeed": 1 },
-          "time": 200
+          "target": 1
         },
-        "version": "3.2.0"
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 4,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 1
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 4,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 0
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 5,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 1
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 5,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 0
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 1,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 3
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 0,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 2
+        }
+      ],
+      "models": [],
+      "nodes": [
+        {
+          "model": "iaf_psc_alpha",
+          "params": [
+            { "id": "C_m", "value": 250, "visible": false },
+            { "id": "E_L", "value": -70, "visible": false },
+            { "id": "I_e", "value": 0, "visible": false },
+            {
+              "id": "V_m",
+              "value": "-70",
+              "visible": true,
+              "type": {
+                "id": "random.uniform",
+                "specs": [
+                  { "id": "min", "value": -70 },
+                  { "id": "max", "value": -55 }
+                ]
+              }
+            },
+            { "id": "V_reset", "value": -70, "visible": false },
+            { "id": "V_th", "value": -55, "visible": false },
+            { "id": "t_ref", "value": 2, "visible": false },
+            { "id": "tau_m", "value": 10, "visible": false },
+            { "id": "tau_syn_ex", "value": 2, "visible": false },
+            { "id": "tau_syn_in", "value": 2, "visible": false }
+          ],
+          "size": "5000",
+          "view": {
+            "color": null,
+            "position": { "x": -86.7890625, "y": -234.375 },
+            "visible": true
+          }
+        },
+        {
+          "model": "iaf_psc_alpha",
+          "params": [
+            { "id": "C_m", "value": 250, "visible": false },
+            { "id": "E_L", "value": -70, "visible": false },
+            { "id": "I_e", "value": 0, "visible": false },
+            {
+              "id": "V_m",
+              "value": "-70",
+              "visible": true,
+              "type": {
+                "id": "random.uniform",
+                "specs": [
+                  { "id": "min", "value": -70 },
+                  { "id": "max", "value": -55 }
+                ]
+              }
+            },
+            { "id": "V_reset", "value": -70, "visible": false },
+            { "id": "V_th", "value": -55, "visible": false },
+            { "id": "t_ref", "value": 2, "visible": false },
+            { "id": "tau_m", "value": 10, "visible": false },
+            { "id": "tau_syn_ex", "value": 2, "visible": false },
+            { "id": "tau_syn_in", "value": 2, "visible": false }
+          ],
+          "size": 5000,
+          "view": {
+            "color": "#FF7F0E",
+            "position": { "x": -82.140625, "y": -350.25 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            { "id": "start", "value": 0, "visible": false },
+            { "id": "stop", "value": 10000, "visible": false }
+          ],
+          "size": 1,
+          "view": {
+            "color": null,
+            "position": { "x": 77.2109375, "y": -231.375 },
+            "visible": true
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            { "id": "start", "value": 0, "visible": false },
+            { "id": "stop", "value": 10000, "visible": false }
+          ],
+          "size": 1,
+          "view": {
+            "color": null,
+            "position": { "x": 81.53515625, "y": -358.375 },
+            "visible": true
+          }
+        },
+        {
+          "model": "noise_generator",
+          "params": [
+            { "id": "mean", "value": 300, "visible": true },
+            { "id": "std", "value": 100, "visible": true },
+            { "id": "start", "value": 0, "visible": false },
+            { "id": "stop", "value": 1000, "visible": false }
+          ],
+          "size": 1,
+          "view": {
+            "color": null,
+            "position": { "x": -237.302734375, "y": -372.375 },
+            "visible": true
+          }
+        },
+        {
+          "model": "dc_generator",
+          "params": [
+            { "id": "amplitude", "value": 50, "visible": true },
+            { "id": "start", "value": 10, "visible": true },
+            { "id": "stop", "value": 110, "visible": true }
+          ],
+          "size": 1,
+          "view": {
+            "color": null,
+            "position": { "x": -220.140625, "y": -230.25 },
+            "visible": true
+          }
+        }
+      ]
+    },
+    "simulation": {
+      "code": {
+        "blocks": [
+          "importModules",
+          "resetKernel",
+          "setKernel",
+          "createNodes",
+          "connectNodes",
+          "runSimulation"
+        ]
       },
+      "kernel": { "localNumThreads": 1, "resolution": 0.1, "rngSeed": 1 },
+      "time": 200
+    },
+    "version": "3.2.0"
+  },
   {
     "activityGraph": {
       "panels": [
@@ -907,7 +907,7 @@
         {
           "model": {
             "id": "firingRatePlot",
-            "params": { "binSize": 1, "normedValue": true }
+            "params": { "binSize": 1, "normedValue": false }
           }
         }
       ]
