@@ -13,7 +13,7 @@
     },
     "createdAt": "2023-01-16T15:33:24.391Z",
     "id": "77e45ad5-2715-440c-910e-c3320c85d8d4",
-    "name": "Recurrent excitation time constant",
+    "name": "recurrent excitation time constant",
     "network": {
       "connections": [
         {
@@ -276,7 +276,7 @@
     },
     "createdAt": "2023-01-16T15:33:24.391Z",
     "id": "fafab226-a339-4f70-8a05-afc17b99695a",
-    "name": "Recurrent inhibition time constant",
+    "name": "recurrent inhibition time constant",
     "network": {
       "connections": [
         {
@@ -539,7 +539,7 @@
     },
     "createdAt": "2023-01-16T15:33:24.391Z",
     "id": "e2302c15-5bb8-48cc-b3aa-53a99d333cb3",
-    "name": "Recurrent network time constant",
+    "name": "recurrent network time constant",
     "network": {
       "connections": [
         {
@@ -914,7 +914,7 @@
     },
     "createdAt": "2023-01-16T15:33:24.391Z",
     "id": "ffec2404-610f-4d38-a743-772beb7bad87",
-    "name": "Recurrent network time constant with feedback inhibition",
+    "name": "recurrent network time constant with feedback inhibition",
     "network": {
       "connections": [
         {
