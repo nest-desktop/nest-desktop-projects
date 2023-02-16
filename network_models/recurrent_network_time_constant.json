@@ -5,8 +5,13 @@
         { "model": { "id": "spikeTimesRasterPlot", "params": {} } },
         {
           "model": {
-            "id": "firingRatePlot",
-            "params": { "binSize": 1, "normedValue": false }
+            "id": "spikeCountPlot",
+            "params": {
+              "binSize": 1,
+              "normalizedValue": "lower-upper averages scale",
+              "lowerUpperBinSize": 50,
+              "horizontalLine": true
+            }
           }
         }
       ]
@@ -268,8 +273,13 @@
         { "model": { "id": "spikeTimesRasterPlot", "params": {} } },
         {
           "model": {
-            "id": "firingRatePlot",
-            "params": { "binSize": 1, "normedValue": false }
+            "id": "spikeCountPlot",
+            "params": {
+              "binSize": 1,
+              "normalizedValue": "lower-upper averages scale",
+              "lowerUpperBinSize": 50,
+              "horizontalLine": true
+            }
           }
         }
       ]
@@ -531,8 +541,13 @@
         { "model": { "id": "spikeTimesRasterPlot", "params": {} } },
         {
           "model": {
-            "id": "firingRatePlot",
-            "params": { "binSize": 1, "normedValue": false }
+            "id": "spikeCountPlot",
+            "params": {
+              "binSize": 1,
+              "normalizedValue": "lower-upper averages scale",
+              "lowerUpperBinSize": 50,
+              "horizontalLine": true
+            }
           }
         }
       ]
@@ -906,8 +921,13 @@
         { "model": { "id": "spikeTimesRasterPlot", "params": {} } },
         {
           "model": {
-            "id": "firingRatePlot",
-            "params": { "binSize": 1, "normedValue": false }
+            "id": "spikeCountPlot",
+            "params": {
+              "binSize": 1,
+              "normalizedValue": "lower-upper averages scale",
+              "lowerUpperBinSize": 50,
+              "horizontalLine": true
+            }
           }
         }
       ]
