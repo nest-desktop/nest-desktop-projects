@@ -1,0 +1,324 @@
+[
+  {
+    "activityGraph": {
+      "panels": [
+        { "model": { "id": "spikeTimesRasterPlot", "params": {} } },
+        {
+          "model": {
+            "id": "spikeCountPlot",
+            "params": {
+              "binSize": 5,
+              "normalizedValue": "firing rate [spikes/s]",
+              "lowerUpperBinSize": 1,
+              "horizontalLine": false
+            }
+          }
+        }
+      ]
+    },
+    "createdAt": "2023-03-17T13:09:38.486Z",
+    "description": "",
+    "id": "0c4f28d4-399c-4bb5-bbbe-939969cd4d8e",
+    "name": "[ViSimpl] Brunel network",
+    "network": {
+      "connections": [
+        {
+          "params": [
+            {
+              "id": "p",
+              "value": 0.05,
+              "visible": true,
+              "rules": [["0 < value && value <= 1", "The value must be between 0.01 and 1.", "error"]]
+            },
+            { "id": "allow_autapses", "value": true, "visible": false },
+            { "id": "use_on_source", "value": 0, "visible": false }
+          ],
+          "rule": "pairwise_bernoulli",
+          "source": 1,
+          "synapse": {
+            "model": "excitatory",
+            "params": [
+              { "id": "weight", "value": "20.68", "visible": false },
+              { "id": "delay", "value": 1.5, "visible": false }
+            ]
+          },
+          "target": 1
+        },
+        {
+          "params": [
+            {
+              "id": "p",
+              "value": 0.05,
+              "visible": true,
+              "rules": [["0 < value && value <= 1", "The value must be between 0.01 and 1.", "error"]]
+            },
+            { "id": "allow_autapses", "value": true, "visible": false },
+            { "id": "use_on_source", "value": 0, "visible": false }
+          ],
+          "rule": "pairwise_bernoulli",
+          "source": 1,
+          "synapse": {
+            "model": "excitatory",
+            "params": [
+              { "id": "weight", "value": "20.68", "visible": false },
+              { "id": "delay", "value": 1.5, "visible": false }
+            ]
+          },
+          "target": 0
+        },
+        {
+          "params": [
+            {
+              "id": "p",
+              "value": 0.05,
+              "visible": true,
+              "rules": [["0 < value && value <= 1", "The value must be between 0.01 and 1.", "error"]]
+            },
+            { "id": "allow_autapses", "value": true, "visible": false },
+            { "id": "use_on_source", "value": 0, "visible": false }
+          ],
+          "rule": "pairwise_bernoulli",
+          "source": 0,
+          "synapse": {
+            "model": "inhibitory",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1.5, "visible": false }
+            ]
+          },
+          "target": 1
+        },
+        {
+          "params": [
+            {
+              "id": "p",
+              "value": 0.05,
+              "visible": true,
+              "rules": [["0 < value && value <= 1", "The value must be between 0.01 and 1.", "error"]]
+            },
+            { "id": "allow_autapses", "value": true, "visible": false },
+            { "id": "use_on_source", "value": 0, "visible": false }
+          ],
+          "rule": "pairwise_bernoulli",
+          "source": 0,
+          "synapse": {
+            "model": "inhibitory",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1.5, "visible": false }
+            ]
+          },
+          "target": 0
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 1,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 3
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 0,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 2
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 5,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 1, "visible": false },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 1
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 4,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 0.5, "visible": true },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 0
+        },
+        {
+          "params": [],
+          "rule": "all_to_all",
+          "source": 4,
+          "synapse": {
+            "model": "static_synapse",
+            "params": [
+              { "id": "weight", "value": 0.5, "visible": true },
+              { "id": "delay", "value": 1, "visible": false }
+            ]
+          },
+          "target": 1
+        }
+      ],
+      "models": [
+        {
+          "existing": "static_synapse",
+          "new": "excitatory",
+          "params": [
+            {
+              "id": "weight",
+              "input": "valueSlider",
+              "label": "synaptic weight",
+              "unit": "pA",
+              "value": 2,
+              "visible": true,
+              "min": -100,
+              "max": 100,
+              "step": 1
+            }
+          ]
+        },
+        {
+          "existing": "static_synapse",
+          "new": "inhibitory",
+          "params": [
+            {
+              "id": "weight",
+              "input": "valueSlider",
+              "label": "synaptic weight",
+              "unit": "pA",
+              "value": -8,
+              "visible": true,
+              "min": -100,
+              "max": 100,
+              "step": 1
+            }
+          ]
+        }
+      ],
+      "nodes": [
+        {
+          "model": "iaf_psc_alpha",
+          "params": [
+            { "id": "C_m", "value": 250, "visible": false },
+            { "id": "E_L", "value": -70, "visible": false },
+            { "id": "I_e", "value": -5, "visible": true },
+            { "id": "V_m", "value": -70, "visible": false },
+            { "id": "V_reset", "value": -70, "visible": false },
+            { "id": "V_th", "value": -55, "visible": false },
+            { "id": "t_ref", "value": 2, "visible": false },
+            { "id": "tau_m", "value": 10, "visible": false },
+            { "id": "tau_syn_ex", "value": 2, "visible": false },
+            { "id": "tau_syn_in", "value": 2, "visible": false }
+          ],
+          "size": 500,
+          "view": {
+            "color": "#E41A1C",
+            "position": { "x": -38.00000762939453, "y": -85.50000762939453 },
+            "visible": true
+          },
+          "spatial": {
+            "positions": "free",
+            "specs": { "edgeWrap": false, "extent": [1, 1, 1], "numDimensions": 3, "pos": [] }
+          }
+        },
+        {
+          "model": "iaf_psc_alpha",
+          "params": [
+            { "id": "C_m", "value": 250, "visible": false },
+            { "id": "E_L", "value": 0, "visible": false },
+            { "id": "I_e", "value": 0, "visible": false },
+            { "id": "V_m", "value": 0, "visible": false },
+            { "id": "V_reset", "value": 0, "visible": false },
+            { "id": "V_th", "value": 20, "visible": false },
+            { "id": "t_ref", "value": 2, "visible": false },
+            { "id": "tau_m", "value": 20, "visible": false },
+            { "id": "tau_syn_ex", "value": 0.5, "visible": false },
+            { "id": "tau_syn_in", "value": 0.5, "visible": false }
+          ],
+          "size": 2000,
+          "view": {
+            "color": "#377EB8",
+            "position": { "x": -131.12501525878906, "y": -83.98438262939453 },
+            "visible": true
+          },
+          "spatial": {
+            "positions": "free",
+            "specs": { "edgeWrap": false, "extent": [1, 1, 1], "numDimensions": 3, "pos": [] }
+          }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            { "id": "start", "value": 0, "visible": false },
+            { "id": "stop", "value": 10000, "visible": false }
+          ],
+          "size": 1,
+          "view": { "color": null, "position": { "x": -11.500015258789062, "y": 31.7812442779541 }, "visible": true }
+        },
+        {
+          "model": "spike_recorder",
+          "params": [
+            { "id": "start", "value": 0, "visible": false },
+            { "id": "stop", "value": 10000, "visible": false }
+          ],
+          "size": 1,
+          "view": { "color": null, "position": { "x": -132.75001525878906, "y": 30.3124942779541 }, "visible": true }
+        },
+        {
+          "model": "poisson_generator",
+          "params": [
+            { "id": "rate", "value": 135000, "visible": true },
+            { "id": "start", "value": 200, "visible": false },
+            { "id": "stop", "value": 800, "visible": false }
+          ],
+          "size": 1,
+          "view": { "color": null, "position": { "x": -77.45703887939453, "y": -222.91455078125 }, "visible": true }
+        },
+        {
+          "model": "dc_generator",
+          "params": [
+            { "id": "amplitude", "value": -5, "visible": true },
+            { "id": "start", "value": 350, "visible": true },
+            { "id": "stop", "value": 650, "visible": true }
+          ],
+          "size": 1,
+          "view": { "color": null, "position": { "x": -232.59375, "y": -85.48438262939453 }, "visible": true }
+        }
+      ]
+    },
+    "simulation": {
+      "code": {
+        "blocks": [
+          "importModules",
+          "resetKernel",
+          "setKernel",
+          "createNodes",
+          "connectNodes",
+          "runSimulation",
+          "runSimulationInsite"
+        ]
+      },
+      "kernel": { "localNumThreads": 1, "resolution": 0.1, "rngSeed": 1 },
+      "time": 1000
+    },
+    "updatedAt": "2023-03-23T09:47:05.268Z",
+    "version": "3.2.0"
+  }
+]
