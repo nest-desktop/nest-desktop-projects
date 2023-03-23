@@ -1,9 +1,8 @@
 [
   {
-    "activityGraph": {
-      "panels": [{ "model": { "id": "spikeTimesRasterPlot" } }]
-    },
-    "createdAt": "2022-11-10T07:51:36.547Z",
+    "activityGraph": { "panels": [{ "model": { "id": "spikeTimesRasterPlot", "params": {} } }] },
+    "createdAt": "2023-03-23T16:33:47.458Z",
+    "description": "",
     "id": "7c145a87-7cc2-42a6-bd24-c1d7540c765f",
     "name": "[NRP] Husky Braitenberg",
     "network": {
@@ -325,11 +324,8 @@
             { "id": "tau_syn_in", "value": 2.5, "visible": false }
           ],
           "size": 2,
-          "view": {
-            "color": null,
-            "position": { "x": -95.522705078125, "y": -294.20880126953125 },
-            "visible": true
-          }
+          "view": { "color": null, "position": { "x": -95.522705078125, "y": -294.20880126953125 }, "visible": true },
+          "annotations": ["neurons"]
         },
         {
           "model": "husky_neuron",
@@ -348,11 +344,8 @@
             { "id": "tau_syn_in", "value": 2.5, "visible": false }
           ],
           "size": 1,
-          "view": {
-            "color": null,
-            "position": { "x": -221.8746337890625, "y": -143.777587890625 },
-            "visible": true
-          }
+          "view": { "color": null, "position": { "x": -221.8746337890625, "y": -143.777587890625 }, "visible": true },
+          "annotations": ["neurons"]
         },
         {
           "model": "husky_neuron",
@@ -371,11 +364,8 @@
             { "id": "tau_syn_in", "value": 2.5, "visible": false }
           ],
           "size": 1,
-          "view": {
-            "color": null,
-            "position": { "x": -112.6513671875, "y": -151.9908447265625 },
-            "visible": true
-          }
+          "view": { "color": null, "position": { "x": -112.6513671875, "y": -151.9908447265625 }, "visible": true },
+          "annotations": ["neurons"]
         },
         {
           "model": "husky_neuron",
@@ -394,11 +384,8 @@
             { "id": "tau_syn_in", "value": 2.5, "visible": false }
           ],
           "size": 1,
-          "view": {
-            "color": null,
-            "position": { "x": -17.6513671875, "y": -150.9908447265625 },
-            "visible": true
-          }
+          "view": { "color": null, "position": { "x": -17.6513671875, "y": -150.9908447265625 }, "visible": true },
+          "annotations": ["neurons"]
         },
         {
           "model": "husky_neuron",
@@ -417,11 +404,8 @@
             { "id": "tau_syn_in", "value": 2.5, "visible": false }
           ],
           "size": 1,
-          "view": {
-            "color": null,
-            "position": { "x": 86.3486328125, "y": -159.9908447265625 },
-            "visible": true
-          }
+          "view": { "color": null, "position": { "x": 86.3486328125, "y": -159.9908447265625 }, "visible": true },
+          "annotations": ["neurons"]
         },
         {
           "model": "husky_neuron",
@@ -440,11 +424,8 @@
             { "id": "tau_syn_in", "value": 2.5, "visible": false }
           ],
           "size": 1,
-          "view": {
-            "color": null,
-            "position": { "x": -215.8746337890625, "y": 28.222412109375 },
-            "visible": true
-          }
+          "view": { "color": null, "position": { "x": -215.8746337890625, "y": 28.222412109375 }, "visible": true },
+          "annotations": ["neurons"]
         },
         {
           "model": "husky_neuron",
@@ -463,11 +444,8 @@
             { "id": "tau_syn_in", "value": 2.5, "visible": false }
           ],
           "size": 1,
-          "view": {
-            "color": null,
-            "position": { "x": 94.8292236328125, "y": 31.722412109375 },
-            "visible": true
-          }
+          "view": { "color": null, "position": { "x": 94.8292236328125, "y": 31.722412109375 }, "visible": true },
+          "annotations": ["neurons"]
         },
         {
           "model": "spike_recorder",
@@ -476,11 +454,7 @@
             { "id": "stop", "value": 10000, "visible": false }
           ],
           "size": 1,
-          "view": {
-            "color": null,
-            "position": { "x": -63.022705078125, "y": -20.72601318359375 },
-            "visible": true
-          }
+          "view": { "color": null, "position": { "x": -63.022705078125, "y": -20.72601318359375 }, "visible": true }
         }
       ]
     },
@@ -492,12 +466,14 @@
           "setKernel",
           "createNodes",
           "connectNodes",
-          "runSimulationInsite"
+          "runSimulationInsite",
+          "tagAnnotations"
         ]
       },
       "kernel": { "localNumThreads": 1, "resolution": 0.1, "rngSeed": 1 },
       "time": 1000
     },
+    "updatedAt": "2023-03-23T16:39:01.524Z",
     "version": "3.2.0"
   }
 ]
